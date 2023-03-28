@@ -10,7 +10,7 @@ stages{
         steps{
         sh "mvn compile"
         sh "mvn test"
-        sh "clean package"
+        sh "mvn clean package"
         sh "mv target/*.war target/myweb.war"
         }
     }
